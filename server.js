@@ -38,7 +38,7 @@ fs.readFile('./public/index.html', 'utf8',(err,data) => {
         res.setHeader('Content-Type', 'text/html');
         res.end(data);
     });
-    sever.listen(port, () => {
+    server.listen(port, () => {
         console.log(`Server listening on port ${port}`);
     });
 });
